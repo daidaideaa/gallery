@@ -1,4 +1,4 @@
-# daidaideaa Gallery
+# daidaide Gallery
 
 A minimal GitHub Pages photo gallery MVP built with Vite, React, and TypeScript.
 
