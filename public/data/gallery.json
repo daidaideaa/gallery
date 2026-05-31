@@ -1,17 +1,171 @@
 {
   "photos": [
     {
-      "id": "demo-001",
-      "title": "First Gallery Image",
-      "description": "A placeholder image for the first version of the gallery.",
-      "author": "daidaideaa",
+      "id": "p-001",
+      "title": "Harbor Morning",
+      "description": "A quiet frame of water, light, and a small red boat.",
+      "author": "daidaide",
       "takenAt": "2026-05-31",
-      "location": "Demo Location",
+      "location": "Osaka Bay",
       "image": {
-        "url": "https://picsum.photos/seed/daidaideaa-gallery/1600/1000",
-        "width": 1600,
-        "height": 1000,
-        "alt": "Placeholder landscape image"
+        "url": "photos/photo-001.png",
+        "width": 1200,
+        "height": 1200,
+        "alt": "Harbor water with a small boat"
+      }
+    },
+    {
+      "id": "p-002",
+      "title": "Soft Crossing",
+      "description": "A street corner held for one passing second.",
+      "author": "daidaide",
+      "takenAt": "2026-05-30",
+      "location": "Namba",
+      "image": {
+        "url": "photos/photo-002.png",
+        "width": 1200,
+        "height": 1200,
+        "alt": "Urban crossing and soft daylight"
+      }
+    },
+    {
+      "id": "p-003",
+      "title": "Blue Hour",
+      "description": "Late light folding over the city before night.",
+      "author": "daidaide",
+      "takenAt": "2026-05-29",
+      "location": "Umeda",
+      "image": {
+        "url": "photos/photo-003.png",
+        "width": 1200,
+        "height": 1200,
+        "alt": "City scene during blue hour"
+      }
+    },
+    {
+      "id": "p-004",
+      "title": "Shrine Walk",
+      "description": "A small path, a pause, and a bit of shade.",
+      "author": "daidaide",
+      "takenAt": "2026-05-28",
+      "location": "Kyoto",
+      "image": {
+        "url": "photos/photo-004.png",
+        "width": 1200,
+        "height": 1200,
+        "alt": "Quiet shrine path"
+      }
+    },
+    {
+      "id": "p-005",
+      "title": "Rain Window",
+      "description": "A window view softened by weather and reflection.",
+      "author": "daidaide",
+      "takenAt": "2026-05-27",
+      "location": "Kobe",
+      "image": {
+        "url": "photos/photo-005.png",
+        "width": 1200,
+        "height": 1200,
+        "alt": "Rainy window reflection"
+      }
+    },
+    {
+      "id": "p-006",
+      "title": "Coastline",
+      "description": "Clean air, layered waves, and a long horizon.",
+      "author": "daidaide",
+      "takenAt": "2026-05-26",
+      "location": "Wakayama",
+      "image": {
+        "url": "photos/photo-006.png",
+        "width": 1200,
+        "height": 1200,
+        "alt": "Coastline with waves and horizon"
+      }
+    },
+    {
+      "id": "p-007",
+      "title": "Evening Train",
+      "description": "Lines, platforms, and the calm before departure.",
+      "author": "daidaide",
+      "takenAt": "2026-05-25",
+      "location": "Tennoji",
+      "image": {
+        "url": "photos/photo-007.png",
+        "width": 1200,
+        "height": 1200,
+        "alt": "Evening train platform"
+      }
+    },
+    {
+      "id": "p-008",
+      "title": "Forest Path",
+      "description": "Green shadows and the sound of a slow walk.",
+      "author": "daidaide",
+      "takenAt": "2026-05-24",
+      "location": "Nara",
+      "image": {
+        "url": "photos/photo-008.png",
+        "width": 1200,
+        "height": 1200,
+        "alt": "Forest path with green shadows"
+      }
+    },
+    {
+      "id": "p-009",
+      "title": "Market Corner",
+      "description": "Color, signs, and the small rhythm of the street.",
+      "author": "daidaide",
+      "takenAt": "2026-05-23",
+      "location": "Kuromon",
+      "image": {
+        "url": "photos/photo-009.png",
+        "width": 1200,
+        "height": 1200,
+        "alt": "Market corner with street color"
+      }
+    },
+    {
+      "id": "p-010",
+      "title": "Stone Steps",
+      "description": "A quiet climb with worn stone underfoot.",
+      "author": "daidaide",
+      "takenAt": "2026-05-22",
+      "location": "Koyasan",
+      "image": {
+        "url": "photos/photo-010.png",
+        "width": 1200,
+        "height": 1200,
+        "alt": "Stone steps on a quiet path"
+      }
+    },
+    {
+      "id": "p-011",
+      "title": "Sunset Roof",
+      "description": "Warm color caught on rooftops at the end of the day.",
+      "author": "daidaide",
+      "takenAt": "2026-05-21",
+      "location": "Sakai",
+      "image": {
+        "url": "photos/photo-011.png",
+        "width": 1200,
+        "height": 1200,
+        "alt": "Rooftops in sunset light"
+      }
+    },
+    {
+      "id": "p-012",
+      "title": "Night Canal",
+      "description": "Reflections moving through a quiet canal at night.",
+      "author": "daidaide",
+      "takenAt": "2026-05-20",
+      "location": "Dotonbori",
+      "image": {
+        "url": "photos/photo-012.png",
+        "width": 1200,
+        "height": 1200,
+        "alt": "Night canal with reflected light"
       }
     }
   ]
