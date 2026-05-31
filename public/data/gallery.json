@@ -1,0 +1,18 @@
+{
+  "photos": [
+    {
+      "id": "demo-001",
+      "title": "First Gallery Image",
+      "description": "A placeholder image for the first version of the gallery.",
+      "author": "daidaideaa",
+      "takenAt": "2026-05-31",
+      "location": "Demo Location",
+      "image": {
+        "url": "https://picsum.photos/seed/daidaideaa-gallery/1600/1000",
+        "width": 1600,
+        "height": 1000,
+        "alt": "Placeholder landscape image"
+      }
+    }
+  ]
+}
