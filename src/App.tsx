@@ -9,7 +9,6 @@ import {
   MapPin,
   Moon,
   Sun,
-  UserRound,
   X,
   type LucideIcon,
 } from 'lucide-react'
@@ -22,6 +21,12 @@ type GalleryImage = {
   alt: string
 }
 
+type PhotoCredit = {
+  artist: string
+  license: string
+  sourceUrl: string
+}
+
 type Photo = {
   id: string
   title: string
@@ -30,6 +35,7 @@ type Photo = {
   takenAt: string
   location: string
   image: GalleryImage
+  credit?: PhotoCredit
 }
 
 type GalleryResponse = {
@@ -43,12 +49,11 @@ type LoadState =
   | { status: 'error'; message: string }
 
 type Theme = 'light' | 'dark'
-type View = 'gallery' | 'explore' | 'profile' | 'about'
+type View = 'gallery' | 'shenzhen' | 'about'
 
 const navItems: Array<{ label: string; view: View; icon: LucideIcon }> = [
   { label: 'Gallery', view: 'gallery', icon: Grid3X3 },
-  { label: 'Explore', view: 'explore', icon: Compass },
-  { label: 'Profile', view: 'profile', icon: UserRound },
+  { label: 'Shenzhen', view: 'shenzhen', icon: Compass },
   { label: 'About', view: 'about', icon: Info },
 ]
 
@@ -132,7 +137,7 @@ function App() {
       <header className="topbar" aria-label="Site header">
         <a className="brand" href={import.meta.env.BASE_URL}>
           <span className="brand-mark">d</span>
-          <span>daidaide</span>
+          <span className="brand-name">daidaide</span>
         </a>
         <button
           className="icon-button"
@@ -161,7 +166,7 @@ function App() {
             <div className="mini-avatar">d</div>
             <div>
               <strong>daidaide</strong>
-              <p>personal visual archive</p>
+              <p>Guangdong Shenzhen</p>
             </div>
           </div>
         </aside>
@@ -265,18 +270,8 @@ function ViewContent({
     return <AboutView photoCount={photos.length} />
   }
 
-  if (activeView === 'profile') {
-    return (
-      <ProfileView
-        onOpenPhoto={onOpenPhoto}
-        photoCount={photos.length}
-        photos={photos}
-      />
-    )
-  }
-
-  if (activeView === 'explore') {
-    return <ExploreView onOpenPhoto={onOpenPhoto} photos={photos} />
+  if (activeView === 'shenzhen') {
+    return <ShenzhenView onOpenPhoto={onOpenPhoto} photos={photos} />
   }
 
   return <GalleryView onOpenPhoto={onOpenPhoto} photos={photos} />
@@ -291,56 +286,40 @@ function GalleryView({
 }) {
   return (
     <div className="view-stack">
-      <ProfileHeader photoCount={photos.length} />
+      <GalleryHeader photoCount={photos.length} />
       <PhotoGrid onOpenPhoto={onOpenPhoto} photos={photos} />
     </div>
   )
 }
 
-function ExploreView({
+function ShenzhenView({
   onOpenPhoto,
   photos,
 }: {
   onOpenPhoto: (photo: Photo) => void
   photos: Photo[]
 }) {
+  const latestPhoto = photos[0]
+
   return (
     <div className="view-stack">
-      <section className="view-heading">
-        <p>Explore</p>
-        <h1>Recent moments</h1>
+      <section className="city-hero">
+        <p className="section-kicker">Guangdong Shenzhen</p>
+        <h1>广东深圳的光，先存这 12 格</h1>
+        <p>
+          海风、玻璃幕墙、地铁站台和一点夜色；这座城市很会把普通一天拍得像正在发生什么。
+        </p>
       </section>
       <div className="summary-row">
         <SummaryCard icon={Camera} label="Photos" value={`${photos.length}`} />
-        <SummaryCard
-          icon={MapPin}
-          label="Places"
-          value={`${new Set(photos.map((photo) => photo.location)).size}`}
-        />
+        <SummaryCard icon={MapPin} label="Location" value="广东深圳" />
         <SummaryCard
           icon={CalendarDays}
           label="Latest"
-          value={photos[0]?.takenAt ?? '-'}
+          value={latestPhoto?.takenAt ?? '-'}
         />
       </div>
       <PhotoGrid compact onOpenPhoto={onOpenPhoto} photos={photos} />
-    </div>
-  )
-}
-
-function ProfileView({
-  onOpenPhoto,
-  photoCount,
-  photos,
-}: {
-  onOpenPhoto: (photo: Photo) => void
-  photoCount: number
-  photos: Photo[]
-}) {
-  return (
-    <div className="view-stack">
-      <ProfileHeader isLarge photoCount={photoCount} />
-      <PhotoGrid onOpenPhoto={onOpenPhoto} photos={photos} />
     </div>
   )
 }
@@ -350,42 +329,40 @@ function AboutView({ photoCount }: { photoCount: number }) {
     <div className="view-stack">
       <section className="about-card">
         <div className="profile-avatar">d</div>
-        <p className="section-kicker">About</p>
-        <h1>daidaide gallery</h1>
+        <p className="section-kicker">About daidaide</p>
+        <h1>会把城市边角认真看一遍的人</h1>
         <p>
-          A quiet personal gallery for small travel scenes, light, streets, and
-          everyday moments. The archive currently holds {photoCount} selected
-          images and will grow as new photos are added.
+          daidaide 可能会在深圳湾看云，在华强北看招牌，在地铁口研究光线；这个小站先收留
+          {photoCount} 张城市切片，等它们慢慢长成自己的相册。
         </p>
+        <div className="about-lines" aria-label="Gallery notes">
+          <p>喜欢海边的风，也喜欢玻璃楼反出来的天。</p>
+          <p>看到好看的路牌、窗户和傍晚，会忍不住停两秒。</p>
+          <p>照片不急着讲大道理，先把那一刻放在这里。</p>
+        </div>
       </section>
     </div>
   )
 }
 
-function ProfileHeader({
-  isLarge = false,
-  photoCount,
-}: {
-  isLarge?: boolean
-  photoCount: number
-}) {
+function GalleryHeader({ photoCount }: { photoCount: number }) {
   return (
-    <section className={isLarge ? 'profile-header large' : 'profile-header'}>
+    <section className="profile-header">
       <div className="profile-avatar">d</div>
       <div className="profile-copy">
         <div className="profile-title-row">
           <h1>daidaide</h1>
-          <span>personal gallery</span>
+          <span>广东深圳</span>
         </div>
-        <div className="profile-stats" aria-label="Profile statistics">
+        <div className="profile-stats" aria-label="Gallery statistics">
           <strong>{photoCount}</strong>
-          <span>posts</span>
-          <strong>12</strong>
-          <span>places</span>
+          <span>photos</span>
+          <strong>1</strong>
+          <span>city</span>
           <strong>2026</strong>
-          <span>archive</span>
+          <span>year</span>
         </div>
-        <p>Small scenes, travel traces, and visual notes.</p>
+        <p>City notes from 广东深圳: skyline, sea wind, neon, and platforms.</p>
       </div>
     </section>
   )
@@ -404,6 +381,7 @@ function PhotoGrid({
     <div className={compact ? 'photo-grid compact' : 'photo-grid'}>
       {photos.map((photo) => (
         <button
+          aria-label={`Open ${photo.title}`}
           className="photo-tile"
           key={photo.id}
           onClick={() => onOpenPhoto(photo)}
@@ -460,6 +438,19 @@ function PhotoModal({
             <p className="section-kicker">@{photo.author}</p>
             <h2 id="photo-modal-title">{photo.title}</h2>
             <p>{photo.description}</p>
+            {photo.credit && (
+              <p className="photo-credit">
+                Photo:{' '}
+                <a
+                  href={photo.credit.sourceUrl}
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  {photo.credit.artist}
+                </a>{' '}
+                · {photo.credit.license}
+              </p>
+            )}
           </div>
           <dl>
             <div>

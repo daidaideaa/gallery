@@ -2,170 +2,230 @@
   "photos": [
     {
       "id": "p-001",
-      "title": "Harbor Morning",
-      "description": "A quiet frame of water, light, and a small red boat.",
+      "title": "深圳湾天际线",
+      "description": "海面把城市拉远一点，玻璃楼和云一起安静下来。",
       "author": "daidaide",
       "takenAt": "2026-05-31",
-      "location": "Osaka Bay",
+      "location": "广东深圳",
       "image": {
-        "url": "photos/photo-001.png",
-        "width": 1200,
-        "height": 1200,
-        "alt": "Harbor water with a small boat"
+        "url": "photos/photo-001.jpg",
+        "width": 1280,
+        "height": 853,
+        "alt": "深圳湾海面与城市天际线"
+      },
+      "credit": {
+        "artist": "Windmemories",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:20201112_The_skyline_at_Shenzhen_Bay.jpg"
       }
     },
     {
       "id": "p-002",
-      "title": "Soft Crossing",
-      "description": "A street corner held for one passing second.",
+      "title": "莲花山的白天",
+      "description": "市民中心从树梢后面露出来，像深圳很认真地伸了个懒腰。",
       "author": "daidaide",
       "takenAt": "2026-05-30",
-      "location": "Namba",
+      "location": "广东深圳",
       "image": {
-        "url": "photos/photo-002.png",
-        "width": 1200,
-        "height": 1200,
-        "alt": "Urban crossing and soft daylight"
+        "url": "photos/photo-002.jpg",
+        "width": 1280,
+        "height": 853,
+        "alt": "从莲花山公园看深圳市民中心"
+      },
+      "credit": {
+        "artist": "Sparktour",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Civic_Center,_Shenzhen_Lianhuashan_Park_(2018.9)_Daytime.jpg"
       }
     },
     {
       "id": "p-003",
-      "title": "Blue Hour",
-      "description": "Late light folding over the city before night.",
+      "title": "市民中心夜色",
+      "description": "夜晚把线条擦亮，城市开始用灯光讲话。",
       "author": "daidaide",
       "takenAt": "2026-05-29",
-      "location": "Umeda",
+      "location": "广东深圳",
       "image": {
-        "url": "photos/photo-003.png",
-        "width": 1200,
-        "height": 1200,
-        "alt": "City scene during blue hour"
+        "url": "photos/photo-003.jpg",
+        "width": 1280,
+        "height": 853,
+        "alt": "深圳市民中心夜景"
+      },
+      "credit": {
+        "artist": "Sparktour",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Night_of_Civic_Center_Shenzhen_from_Lianhua_Mountain.jpg"
       }
     },
     {
       "id": "p-004",
-      "title": "Shrine Walk",
-      "description": "A small path, a pause, and a bit of shade.",
+      "title": "平安的高度",
+      "description": "一栋楼把天空切开，路过的人继续低头赶路。",
       "author": "daidaide",
       "takenAt": "2026-05-28",
-      "location": "Kyoto",
+      "location": "广东深圳",
       "image": {
-        "url": "photos/photo-004.png",
-        "width": 1200,
-        "height": 1200,
-        "alt": "Quiet shrine path"
+        "url": "photos/photo-004.jpg",
+        "width": 1164,
+        "height": 2068,
+        "alt": "深圳平安金融中心"
+      },
+      "credit": {
+        "artist": "Charlie fong",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pingan_International_Finance_Center2020.jpg"
       }
     },
     {
       "id": "p-005",
-      "title": "Rain Window",
-      "description": "A window view softened by weather and reflection.",
+      "title": "华强北路口",
+      "description": "招牌、车流、人潮，各自发光，各自很忙。",
       "author": "daidaide",
       "takenAt": "2026-05-27",
-      "location": "Kobe",
+      "location": "广东深圳",
       "image": {
-        "url": "photos/photo-005.png",
-        "width": 1200,
-        "height": 1200,
-        "alt": "Rainy window reflection"
+        "url": "photos/photo-005.jpg",
+        "width": 1280,
+        "height": 1707,
+        "alt": "深圳华强北与深南路交汇处"
+      },
+      "credit": {
+        "artist": "Charlie fong",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Huaqiangbei%26Shennan_Cross2021.jpg"
       }
     },
     {
       "id": "p-006",
-      "title": "Coastline",
-      "description": "Clean air, layered waves, and a long horizon.",
+      "title": "深圳湾大桥",
+      "description": "桥把海面写成一条线，风从线的两边吹过来。",
       "author": "daidaide",
       "takenAt": "2026-05-26",
-      "location": "Wakayama",
+      "location": "广东深圳",
       "image": {
-        "url": "photos/photo-006.png",
-        "width": 1200,
-        "height": 1200,
-        "alt": "Coastline with waves and horizon"
+        "url": "photos/photo-006.jpg",
+        "width": 1280,
+        "height": 960,
+        "alt": "深圳侧看深圳湾大桥"
+      },
+      "credit": {
+        "artist": "Sparktour",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shenzhen_Bay_Bridge_To_HK_on_Shenzhen_Side.jpg"
       }
     },
     {
       "id": "p-007",
-      "title": "Evening Train",
-      "description": "Lines, platforms, and the calm before departure.",
+      "title": "深圳湾公园",
+      "description": "海边适合慢下来，哪怕只是慢一张照片的时间。",
       "author": "daidaide",
       "takenAt": "2026-05-25",
-      "location": "Tennoji",
+      "location": "广东深圳",
       "image": {
-        "url": "photos/photo-007.png",
-        "width": 1200,
-        "height": 1200,
-        "alt": "Evening train platform"
+        "url": "photos/photo-007.jpg",
+        "width": 1280,
+        "height": 960,
+        "alt": "深圳湾公园海边步道"
+      },
+      "credit": {
+        "artist": "Mx. Granger",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shenzhen_Bay_Park_-_2019-12-09_-_1.jpg"
       }
     },
     {
       "id": "p-008",
-      "title": "Forest Path",
-      "description": "Green shadows and the sound of a slow walk.",
+      "title": "欢乐海岸",
+      "description": "水边的建筑有一点游乐场的心情，连倒影都更松弛。",
       "author": "daidaide",
       "takenAt": "2026-05-24",
-      "location": "Nara",
+      "location": "广东深圳",
       "image": {
-        "url": "photos/photo-008.png",
-        "width": 1200,
-        "height": 1200,
-        "alt": "Forest path with green shadows"
+        "url": "photos/photo-008.jpg",
+        "width": 1280,
+        "height": 854,
+        "alt": "深圳欢乐海岸水边建筑"
+      },
+      "credit": {
+        "artist": "Dinkun Chen",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:OCT_HARBOUR,_SHENZHEN_(11).jpg"
       }
     },
     {
       "id": "p-009",
-      "title": "Market Corner",
-      "description": "Color, signs, and the small rhythm of the street.",
+      "title": "世界之窗一角",
+      "description": "旅行感被折进城市里，像周末突然冒出来的彩蛋。",
       "author": "daidaide",
       "takenAt": "2026-05-23",
-      "location": "Kuromon",
+      "location": "广东深圳",
       "image": {
-        "url": "photos/photo-009.png",
-        "width": 1200,
-        "height": 1200,
-        "alt": "Market corner with street color"
+        "url": "photos/photo-009.jpg",
+        "width": 1280,
+        "height": 853,
+        "alt": "深圳世界之窗景区"
+      },
+      "credit": {
+        "artist": "Dinkun Chen",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:WINDOWS_OF_THE_WORLD_SHENZHEN_(21).jpg"
       }
     },
     {
       "id": "p-010",
-      "title": "Stone Steps",
-      "description": "A quiet climb with worn stone underfoot.",
+      "title": "莲花山树影",
+      "description": "树和路都很安静，城市在远处保持运行。",
       "author": "daidaide",
       "takenAt": "2026-05-22",
-      "location": "Koyasan",
+      "location": "广东深圳",
       "image": {
-        "url": "photos/photo-010.png",
-        "width": 1200,
-        "height": 1200,
-        "alt": "Stone steps on a quiet path"
+        "url": "photos/photo-010.jpg",
+        "width": 1280,
+        "height": 960,
+        "alt": "深圳莲花山公园步道"
+      },
+      "credit": {
+        "artist": "Ermell",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lianhuashan_Park_Shenzen_China_1310762.jpg"
       }
     },
     {
       "id": "p-011",
-      "title": "Sunset Roof",
-      "description": "Warm color caught on rooftops at the end of the day.",
+      "title": "九号线站台",
+      "description": "地铁站把日常整理得很干净，等车的人自带时间线。",
       "author": "daidaide",
       "takenAt": "2026-05-21",
-      "location": "Sakai",
+      "location": "广东深圳",
       "image": {
-        "url": "photos/photo-011.png",
-        "width": 1200,
-        "height": 1200,
-        "alt": "Rooftops in sunset light"
+        "url": "photos/photo-011.jpg",
+        "width": 1280,
+        "height": 720,
+        "alt": "深圳地铁九号线深圳湾公园站台"
+      },
+      "credit": {
+        "artist": "Wahsaw",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shenzhen_Metro_Line_9_Shenzhen_Bay_Park_Sta_Platform.jpg"
       }
     },
     {
       "id": "p-012",
-      "title": "Night Canal",
-      "description": "Reflections moving through a quiet canal at night.",
+      "title": "人才公园站口",
+      "description": "一个出口、一块天空、几棵树，够拼成今天的封面。",
       "author": "daidaide",
       "takenAt": "2026-05-20",
-      "location": "Dotonbori",
+      "location": "广东深圳",
       "image": {
-        "url": "photos/photo-012.png",
-        "width": 1200,
-        "height": 1200,
-        "alt": "Night canal with reflected light"
+        "url": "photos/photo-012.jpg",
+        "width": 1280,
+        "height": 961,
+        "alt": "深圳地铁人才公园站出口"
+      },
+      "credit": {
+        "artist": "Bob Wehn",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Exit_C_of_Talent_Park_Station,_Shenzhen_Metro_(Aug_18,_2023).jpg"
       }
     }
   ]

@@ -21,11 +21,17 @@
   align-items: center;
   color: var(--text-strong);
   display: inline-flex;
-  font-size: 22px;
   font-weight: 780;
   gap: 10px;
   letter-spacing: 0;
   text-decoration: none;
+}
+
+.brand-name {
+  font-family: var(--font-logo);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1;
 }
 
 .brand-mark,
@@ -36,6 +42,7 @@
   border-radius: 999px;
   color: white;
   display: inline-flex;
+  font-family: var(--font-logo);
   font-weight: 820;
   justify-content: center;
 }
@@ -151,10 +158,6 @@
   padding: 8px 8px 28px;
 }
 
-.profile-header.large {
-  padding-top: 20px;
-}
-
 .profile-avatar {
   font-size: 58px;
   height: 132px;
@@ -170,12 +173,18 @@
 }
 
 .profile-title-row h1,
-.view-heading h1,
+.city-hero h1,
 .about-card h1 {
   color: var(--text-strong);
   font-size: 28px;
   line-height: 1.1;
   margin: 0;
+}
+
+.profile-title-row h1 {
+  font-family: var(--font-logo);
+  font-size: 38px;
+  font-weight: 700;
 }
 
 .profile-title-row span {
@@ -202,7 +211,7 @@
 
 .profile-stats span,
 .profile-copy p,
-.view-heading p,
+.city-hero p,
 .about-card p,
 .section-kicker {
   color: var(--muted);
@@ -276,7 +285,6 @@
 }
 
 .summary-card,
-.about-card,
 .state-panel {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -306,19 +314,30 @@
   line-height: 1.25;
 }
 
-.view-heading {
-  margin: 0 0 16px;
-}
-
-.view-heading p,
 .section-kicker {
   font-size: 13px;
   font-weight: 820;
   margin: 0 0 4px;
 }
 
+.city-hero {
+  border-bottom: 1px solid var(--border);
+  margin: 0 0 18px;
+  padding: 12px 8px 28px;
+}
+
+.city-hero h1 {
+  margin-bottom: 10px;
+}
+
+.city-hero p {
+  margin: 0;
+  max-width: 620px;
+}
+
 .about-card {
-  padding: 38px;
+  border-bottom: 1px solid var(--border);
+  padding: 24px 8px 32px;
 }
 
 .about-card .profile-avatar {
@@ -330,6 +349,24 @@
 
 .about-card h1 {
   margin-bottom: 12px;
+}
+
+.about-card > p {
+  max-width: 680px;
+}
+
+.about-lines {
+  border-top: 1px solid var(--border);
+  display: grid;
+  gap: 10px;
+  margin-top: 26px;
+  max-width: 680px;
+  padding-top: 22px;
+}
+
+.about-lines p {
+  color: var(--text);
+  margin: 0;
 }
 
 .state-panel {
@@ -426,6 +463,21 @@
   margin: 0;
 }
 
+.modal-details a {
+  color: var(--text-strong);
+  font-weight: 760;
+  text-decoration: none;
+}
+
+.modal-details a:hover {
+  text-decoration: underline;
+}
+
+.photo-credit {
+  font-size: 12px;
+  margin-top: 16px !important;
+}
+
 .modal-details dl {
   border-top: 1px solid var(--border);
   display: grid;
@@ -463,7 +515,11 @@
   }
 
   .brand {
-    font-size: 20px;
+    gap: 8px;
+  }
+
+  .brand-name {
+    font-size: 29px;
   }
 
   .page-frame {
@@ -526,13 +582,13 @@
     margin-inline: 12px;
   }
 
-  .view-heading,
+  .city-hero,
   .about-card {
     margin-inline: 12px;
   }
 
   .about-card {
-    padding: 24px;
+    padding: 18px 0 24px;
   }
 
   .mobile-nav {
@@ -540,7 +596,7 @@
     border-top: 1px solid var(--border);
     bottom: 0;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     height: 64px;
     left: 0;
     position: fixed;

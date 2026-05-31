@@ -1,8 +1,8 @@
 # daidaide Gallery
 
-A minimal GitHub Pages photo gallery MVP built with Vite, React, and TypeScript.
+Personal photo gallery for daidaide, built with Vite, React, and TypeScript.
 
-The first version uses a static JSON file as the backend:
+The gallery reads photo data from a static JSON file:
 
 ```txt
 public/data/gallery.json
